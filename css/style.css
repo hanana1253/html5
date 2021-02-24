@@ -91,9 +91,9 @@ a{
     line-height: 45px;
 }
 .menu-item-button{
+    padding: 2px 20px 0;
     display: block;
     color: #fff;
-    padding: 3px 20px 3px;
     font-size: 1.6rem;
     font-weight: 700;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
