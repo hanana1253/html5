@@ -3,7 +3,7 @@
 @import url(./normalize.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
     background-color: yellow;
     position: absolute;
     width: 1px;
@@ -227,6 +227,74 @@ a{
 }
 .group3{
     width: 190px;
+}
+/* 로그인 */
+.login{
+    background: radial-gradient(circle at right top, #f9c13e, #dd7a23);
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 0 #888;
+    padding: 10px;
+}
+.login-heading{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff0;
+    text-indent: 10px;
+}
+.login-form{
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0 10px;
+    margin-top: 10px;
+}
+.login-form fieldset{
+    margin: 0;
+    padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.login-form input{
+    width: 90px;
+    height: 22px;
+    padding: 1px 1px 1px 5px;
+    border: 1px solid #aaa;
+}
+.login-form label{
+    display: inline-block;
+    width: 50px;
+}
+.user-pw{
+    margin-top: 6px;
+}
+.btn-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #dd7a23;
+    color: #fff;
+    padding: 0;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.member-service{
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.member-service a{
+    display: inline-block;
+    padding: 5px 0;
+}
+.member-service .icon-right-open{
+    color: #dd7a23;
 }
 .slogan{
     background-color: lightgreen;
