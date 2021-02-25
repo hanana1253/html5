@@ -296,6 +296,23 @@ a{
 .member-service .icon-right-open{
     color: #dd7a23;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+    background-color: yellow;
+    margin: 25px 0 0 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.validation-list a{
+    display: block;
+    background: url(./images/validation_icon.png) no-repeat 15px 50%,
+    linear-gradient(to bottom, #ccc, #eee);
+    background-color: #ccc;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+    padding: 7px 5px 5px 45px;
+}
 .slogan{
     background-color: lightgreen;
     height: 10vh;
