@@ -433,6 +433,121 @@ a{
     height: 22px;
     font-size: 1.1rem;
 }
+/* 공지사항 및 자료실 */
+.board{
+    background-color: yellow;
+    position: relative;
+    padding-top: 45px;
+    margin-top: 20px;
+}
+.notice-list, .notice-more, .pds-list, .pds-more{
+    display: none;
+}
+.tab-act .notice-list, .tab-act .notice-more,
+.tab-act .pds-list, .tab-act .pds-more{
+    display: block;
+}
+.tab{
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    background: #ccc linear-gradient(180deg, #ccc, #eee);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    padding: 10px 15px 8px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.tab-act .tab{
+    color: #ce4827;
+    background: #fff;
+    border-color: #ce4827 #ce4827 #fff #ce4827;
+}
+.notice-heading{
+    left: 0;
+}
+.pds-heading{
+    left: 76px;
+}
+.notice-list, .pds-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: skyblue;
+}
+.notice-list li, .pds-list li{
+    display: flex;
+}
+.notice-list a, .pds-list a{
+    background-color: green;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 280px;
+}
+.notice-list time, .pds-list time{
+    /* width: 150px; */
+}
+.notice-more, .pds-more{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* .board{
+    position: relative;
+    margin: 20px 0;
+}
+.board section ul{
+    display: none;
+}
+.board section{
+    display: inline-block;
+}
+.board .tab-act ul{
+    display: block;
+}
+.board .tab{
+    display: inline-block;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    background: #ccc linear-gradient(180deg, #ccc, #fff);
+}
+.board ul{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    list-style-type: none;
+    margin:0;
+    padding-left: 0;
+    background-color: salmon;
+}
+.icon-plus{
+    background-color: lime;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+/* 플렉스박스 배치 */
+.group3{
+    background-color: yellow;
+}
+/*.group3 span{
+    border: 1px solid red;
+}
+.group3::before{
+    content: "";
+}
+.group3 span:nth-child(n+2){
+    margin-left: auto;
+} */
 /* .slogan{
     background-color: lightgreen;
     height: 10vh;
