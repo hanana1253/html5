@@ -315,28 +315,90 @@ a{
 /* 웹 관련 용어 */
 .term{
     margin-top: 20px;
-    overflow: hidden;
-    padding: 15px 17px;
-    border: 1px solid #ccc;
+    /* overflow: hidden; */
+    background: #ccc linear-gradient(180deg, #ccc, #eee);
+    border: 1px solid #aaa;
     border-radius: 5px;
+    padding: 15px;
 }
 .term-heading{
     margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
-.term dt{
+.term-list{
+    margin: 10px 0 0 0;
+}
+.term-list-thumbnail, .term-list-brief{
+    margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+    width: 145px;
+}
+.term-list-subject{
+    color: #296897;
+    margin-top: -1px;
+}
+.term-list-brief{
+    margin-top: 5px;
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+.term-list > div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.term-list > div{
+    /* overflow: hidden; */
+    margin-top: 10px;
+}
+.term-list img{
+    vertical-align: top;
+}
+.term-list div:nth-child(odd) .term-list-subject, 
+.term-list div:nth-child(odd) .term-list-brief{
+    float: right;
+}
+.term-list div:nth-child(odd) .term-list-thumbnail{
+    float: left;
+}
+.term-list div:nth-child(even) .term-list-subject, 
+.term-list div:nth-child(even) .term-list-brief{
+    float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail{
+    float: right;
+}
+/* .term-list div{
+    overflow: hidden;
+} */
+/* .term-list :nth-child(odd) .term-list-subject, .term-list :nth-child(odd) .term-list-brief, .term-list :nth-child(even) .term-list-thumbnail{
+    float: right;
+}
+.term-list :nth-child(even) .term-list-subject, .term-list :nth-child(even) .term-list-brief, .term-list :nth-child(odd) .term-list-thumbnail{
+    float: left;
+}
+.term-list-subject{
+    float: right;
     display: inline-block;
+    width: 150px;
     background-color: lime;
+    font-size:1.4rem;
 }
 .term dd{
     margin: 0;
-}
-.term-list-thumbnail{
+} */
+/* .term-list-thumbnail{
     float: left;
-    padding-right: 12px;
-}
-.term-list-brief{
+} */
+/* .term-list-brief{
+    float: right;
+    display: inline-block;
+    width: 150px;
     background-color: purple;
-}
+    font-size: 1.3rem;
+} */
 .slogan{
     background-color: lightgreen;
     height: 10vh;
