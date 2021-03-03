@@ -747,10 +747,46 @@ a{
 .favorite-more::before{
     color: hsla(110, 30%, 50%, 1)
 }
-/* .slogan{
-    background-color: lightgreen;
-    height: 10vh;
-} */
+/* 슬로건 */
+.slogan{
+    background-color: yellow;
+    padding: 15px 100px 15px 180px;
+    position: relative;
+}
+.slogan-heading{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    width: 110px;
+    height: 83px;
+    line-height: 83px;
+    text-align: center;
+    margin: 0;
+}
+.slogan-heading::after{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/coffee.png);
+    background-repeat: no-repeat;
+}
+.slogan-content{
+    color: #988574;
+    font-size: 1.4rem;
+    font-style: bold;
+    margin: 0;
+}
+.slogan-content>q::before{
+    font-size: 3.6rem;
+    position: relative;
+    top:15px;
+}
+.slogan-content>q::after{
+    content: "";
+}
 .footer{
     background-color: silver;
     padding: 8px;
