@@ -603,14 +603,6 @@ a{
 .group3{
     /* background-color: yellow; */
 }
-@keyframe hoverAni{
-    0%{
-
-    }
-    100%{
-
-    }
-}
 /* 신규이벤트 및 관련사이트 */
 .gradient-box{
     background: #ccc linear-gradient(180deg, #ccc, #eee);
@@ -642,7 +634,7 @@ a{
     font-style: normal;
     display: block;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .favorite-heading{
     margin: 0 0 10px 0;
     font-size: 1.5rem;
 }
@@ -676,8 +668,6 @@ a{
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
-    animation-name: hoverAni;
-    animation-duration: 500ms;
     transition-property: all;
     transition-duration: 0.4s;
 }
@@ -703,6 +693,60 @@ a{
 .group3 span:nth-child(n+2){
     margin-left: auto;
 } */
+/* 인기 사이트 영역 */
+.favorite{
+    margin-top: 20px;
+    position: relative;
+    padding-top: 15px;
+}
+.favorite-list{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.favorite-list li{
+    counter-increment: number;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.favorite-list li::before{
+    content: counter(number);
+    color: #fff;
+    background-color: #aaa;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin: 0 5px 0 0;
+}
+.favorite-list a{
+    flex-grow: 1;
+}
+.favorite-list .up, .favorite-list .stop, .favorite-list .down{
+    font-style: normal;
+    width: 9px;
+    height: 11px;
+    overflow: hidden;
+    text-indent: 9px;
+    white-space: nowrap;
+    background-image: url(./images/rank.png);
+    background-repeat: no-repeat;
+}
+.favorite-list .down{
+    background-position: 0 100%;
+}
+.favorite-list .stop{
+    background-position: 0 50%;
+}
+.favorite-more{
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    padding: 8px;
+}
+.favorite-more::before{
+    color: hsla(110, 30%, 50%, 1)
+}
 /* .slogan{
     background-color: lightgreen;
     height: 10vh;
